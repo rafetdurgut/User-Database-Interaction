@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.projectOneDataSet = new WindowsFormsApp1.ProjectOneDataSet();
-            this.uSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.uSERTableAdapter = new WindowsFormsApp1.ProjectOneDataSetTableAdapters.USERTableAdapter();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -59,25 +56,10 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.projectOneDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // projectOneDataSet
-            // 
-            this.projectOneDataSet.DataSetName = "ProjectOneDataSet";
-            this.projectOneDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // uSERBindingSource
-            // 
-            this.uSERBindingSource.DataMember = "USER";
-            this.uSERBindingSource.DataSource = this.projectOneDataSet;
-            // 
-            // uSERTableAdapter
-            // 
-            this.uSERTableAdapter.ClearBeforeFill = true;
             // 
             // listView1
             // 
@@ -331,8 +313,6 @@
             this.Controls.Add(this.listView1);
             this.Name = "UserPanel";
             this.Text = "UserPanel";
-            ((System.ComponentModel.ISupportInitialize)(this.projectOneDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -342,9 +322,6 @@
         }
 
         #endregion
-        private ProjectOneDataSet projectOneDataSet;
-        private System.Windows.Forms.BindingSource uSERBindingSource;
-        private ProjectOneDataSetTableAdapters.USERTableAdapter uSERTableAdapter;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
